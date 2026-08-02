@@ -5,3 +5,8 @@ publish = "."
   from = "/api/*"
   to = "https://render-backend-k4co.onrender.com/api/:splat"
   status = 200
+
+[[redirects]]
+  from = "/admin/*"
+  to = "https://render-backend-k4co.onrender.com/admin/:splat"
+  status = 200
