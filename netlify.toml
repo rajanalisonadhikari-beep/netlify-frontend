@@ -1,0 +1,7 @@
+[build]
+publish = "netlify-frontend"
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://<my-render-app>.onrender.com/api/:splat"
+  status = 200

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover Rajan Adhikari's barber work, haircut gallery, and appointment booking information."
+    />
+    <meta property="og:title" content="Rajan Adhikari | Barber Cuts" />
+    <meta property="og:description" content="A polished grooming gallery with a simple add-new-cut experience for Rajan." />
+    <meta property="og:type" content="website" />
+    <title>Rajan Adhikari | Barber Cuts</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230B3D91'/%3E%3Cpath d='M30 72l20-30 20 30' stroke='white' stroke-width='8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Barber navigation">
+        <a class="brand" href="index.html"><img class="site-logo" src="logo.svg" alt="Rajan logo" /></a>
+        <div class="nav-links">
+          <a href="index.html#home">Home</a>
+          <a href="blog.html" target="_blank" rel="noopener">Blog</a>
+          <a href="about.html" target="_blank" rel="noopener">About</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Barber</p>
+          <h1>Sharp cuts, thoughtful style, and a confident finish.</h1>
+          <p class="lead">
+            From fades to sculpted classics, Rajan brings a polished, modern approach to everyday grooming.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-secondary" href="payment.html">Book an Appointment</a>
+          </div>
+          <div class="info-strip">
+            <span>Location: Nepal, Kathmandu</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Gallery</p>
+              <h2>Haircut portfolio</h2>
+            </div>
+            <div class="inline-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 5h2" />
+                <path d="M5 7h2" />
+                <path d="M6 6l10 10" />
+                <path d="M15 5h2" />
+                <path d="M17 7h2" />
+                <path d="M8 19h2" />
+                <path d="M13 16h2" />
+              </svg>
+            </div>
+          </div>
+
+          <div id="barber-gallery" class="gallery-grid" aria-live="polite"></div>
+
+          <div class="blog-form-card" style="margin-top: 1.6rem;">
+            <h3>Add a New Cut</h3>
+            <form id="barber-form" class="stacked-form">
+              <label>
+                Cut Name
+                <input type="text" name="name" required />
+              </label>
+              <label>
+                Image URL
+                <input type="url" name="image" placeholder="https://example.com/image.jpg" />
+              </label>
+              <label>
+                Description
+                <textarea name="description" rows="4" required></textarea>
+              </label>
+              <button class="btn btn-primary" type="submit">Add to Gallery</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>© 2026 Rajan Adhikari. Style, precision, and easy confidence.</p>
+        <a href="index.html">Back to Home</a>
+      </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox" aria-label="Image preview">
+      <button type="button" aria-label="Close preview">Close</button>
+      <img id="lightbox-image" src="" alt="Expanded haircut preview" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
