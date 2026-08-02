@@ -20,7 +20,7 @@
   <body>
     <header class="site-header">
       <nav class="nav container" aria-label="Trekking navigation">
-        <a class="brand" href="index.html"><img class="site-logo" src="logo.svg" alt="Rajan logo" /></a>
+        <a class="brand" href="index.html"><img class="site-logo" src="logo.svg" alt="Rajan logo" data-cms="logo" /></a>
         <div class="nav-links">
           <a href="index.html#home">Home</a>
           <a href="about.html" target="_blank" rel="noopener">About</a>
@@ -32,9 +32,9 @@
     <main>
       <section class="page-hero">
         <div class="container">
-          <p class="eyebrow">Trekking</p>
-          <h1>Routes shaped by altitude, weather, and trust.</h1>
-          <p class="lead trek-lead">
+          <p class="eyebrow" data-cms="eyebrow">Trekking</p>
+          <h1 data-cms="heading">Routes shaped by altitude, weather, and trust.</h1>
+          <p class="lead trek-lead" data-cms="lead">
             From the Everest region to the Annapurna foothills, Rajan guides journeys with calm preparation and deep respect for the mountains.
           </p>
           <div class="hero-actions">
@@ -48,20 +48,20 @@
 
       <section class="page-section">
         <div class="container">
-          <p class="eyebrow">Featured Routes</p>
-          <h2>Popular journeys for curious travelers.</h2>
+          <p class="eyebrow" data-cms="featured-eyebrow">Featured Routes</p>
+          <h2 data-cms="featured-heading">Popular journeys for curious travelers.</h2>
           <div class="skills-grid">
             <article class="trek-card">
-              <h3>Everest Base Camp</h3>
-              <p>Classic high-altitude adventure with unforgettable glacier views, teahouse culture, and a powerful sense of accomplishment.</p>
+              <h3 data-cms="ebc-title">Everest Base Camp</h3>
+              <p data-cms="ebc-desc">Classic high-altitude adventure with unforgettable glacier views, teahouse culture, and a powerful sense of accomplishment.</p>
             </article>
             <article class="trek-card">
-              <h3>Annapurna Circuit</h3>
-              <p>One of Nepal’s most varied routes, balancing dramatic ridgelines, valleys, and rich cultural encounters.</p>
+              <h3 data-cms="annapurna-title">Annapurna Circuit</h3>
+              <p data-cms="annapurna-desc">One of Nepal’s most varied routes, balancing dramatic ridgelines, valleys, and rich cultural encounters.</p>
             </article>
             <article class="trek-card">
-              <h3>Langtang Valley</h3>
-              <p>A balanced and scenic trek for those wanting close mountain access with a welcoming local atmosphere.</p>
+              <h3 data-cms="langtang-title">Langtang Valley</h3>
+              <p data-cms="langtang-desc">A balanced and scenic trek for those wanting close mountain access with a welcoming local atmosphere.</p>
             </article>
           </div>
         </div>
@@ -69,29 +69,29 @@
 
       <section class="section section-alt">
         <div class="container">
-          <p class="eyebrow">Gallery</p>
-          <h2>Mountain moments from the trail.</h2>
+          <p class="eyebrow" data-cms="gallery-eyebrow">Gallery</p>
+          <h2 data-cms="gallery-heading">Mountain moments from the trail.</h2>
           <div class="gallery-grid">
             <article class="gallery-card">
               <button type="button">
-                <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=900&q=80" alt="Snowy mountain ridge at sunrise" />
+                <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=900&q=80" alt="Snowy mountain ridge at sunrise" data-cms="gallery-1-image" />
               </button>
-              <h3>Sunrise Ridge</h3>
-              <p>A calm, high-elevation view that rewards early starts.</p>
+              <h3 data-cms="gallery-1-title">Sunrise Ridge</h3>
+              <p data-cms="gallery-1-desc">A calm, high-elevation view that rewards early starts.</p>
             </article>
             <article class="gallery-card">
               <button type="button">
-                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80" alt="Hiker walking along a mountain trail" />
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80" alt="Hiker walking along a mountain trail" data-cms="gallery-2-image" />
               </button>
-              <h3>Trail Approach</h3>
-              <p>Every route begins with one steady step and clear preparation.</p>
+              <h3 data-cms="gallery-2-title">Trail Approach</h3>
+              <p data-cms="gallery-2-desc">Every route begins with one steady step and clear preparation.</p>
             </article>
             <article class="gallery-card">
               <button type="button">
-                <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80" alt="Mountain valley with pine trees" />
+                <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80" alt="Mountain valley with pine trees" data-cms="gallery-3-image" />
               </button>
-              <h3>Valley View</h3>
-              <p>Quiet landscapes and rich air make the trek memorable beyond the summit.</p>
+              <h3 data-cms="gallery-3-title">Valley View</h3>
+              <p data-cms="gallery-3-desc">Quiet landscapes and rich air make the trek memorable beyond the summit.</p>
             </article>
           </div>
         </div>
@@ -99,10 +99,10 @@
 
       <section class="page-section">
         <div class="container">
-          <p class="eyebrow">Philosophy</p>
+          <p class="eyebrow" data-cms="philosophy-eyebrow">Philosophy</p>
           <div class="card">
-            <h2>Guidance that balances adventure and responsibility.</h2>
-            <p>
+            <h2 data-cms="philosophy-heading">Guidance that balances adventure and responsibility.</h2>
+            <p data-cms="philosophy-text">
               The best treks are not only about reaching a destination. They are about preparation, pacing, and creating a sense of safety so each traveler can absorb the scenery and the experience fully.
             </p>
             <a class="btn btn-primary" href="https://viewnepaltreks.com/" target="_blank" rel="noopener">Visit View Nepal Treks</a>
@@ -124,5 +124,6 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="cms-loader.js" data-cms-page="trekking"></script>
   </body>
 </html>
