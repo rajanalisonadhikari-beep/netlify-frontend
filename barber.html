@@ -20,7 +20,7 @@
   <body>
     <header class="site-header">
       <nav class="nav container" aria-label="Barber navigation">
-        <a class="brand" href="index.html"><img class="site-logo" src="logo.svg" alt="Rajan logo" /></a>
+        <a class="brand" href="index.html"><img class="site-logo" src="logo.svg" alt="Rajan logo" data-cms="logo" /></a>
         <div class="nav-links">
           <a href="index.html#home">Home</a>
           <a href="blog.html" target="_blank" rel="noopener">Blog</a>
@@ -32,9 +32,9 @@
     <main>
       <section class="page-hero">
         <div class="container">
-          <p class="eyebrow">Barber</p>
-          <h1>Sharp cuts, thoughtful style, and a confident finish.</h1>
-          <p class="lead">
+          <p class="eyebrow" data-cms="eyebrow">Barber</p>
+          <h1 data-cms="heading">Sharp cuts, thoughtful style, and a confident finish.</h1>
+          <p class="lead" data-cms="lead">
             From fades to sculpted classics, Rajan brings a polished, modern approach to everyday grooming.
           </p>
           <div class="hero-actions">
@@ -50,8 +50,8 @@
         <div class="container">
           <div class="section-heading">
             <div>
-              <p class="eyebrow">Gallery</p>
-              <h2>Haircut portfolio</h2>
+              <p class="eyebrow" data-cms="gallery-eyebrow">Gallery</p>
+              <h2 data-cms="gallery-heading">Haircut portfolio</h2>
             </div>
             <div class="inline-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
@@ -103,5 +103,6 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="cms-loader.js" data-cms-page="barber"></script>
   </body>
 </html>
